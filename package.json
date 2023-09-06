@@ -1,0 +1,15 @@
+{
+  "name": "evaluacion_recuperatorio_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "scerutti",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
