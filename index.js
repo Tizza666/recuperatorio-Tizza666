@@ -5,7 +5,15 @@
   Y si el número es igual a cero, debe devolver "igual".
 */
 
-function esMayorOMenor() {}
+function esMayorOMenor(num1,num2) {
+  if (num1 > num2) {
+    return "mayor";
+  } else if (num1 < num2) {
+    return "menor";
+  } else {
+    return "igual";
+  }
+} 
 
 /* Actividad N°2: Calcular Precio de Productos -- 3 PUNTOS
 
@@ -33,7 +41,32 @@ function esMayorOMenor() {}
   AYUDA -> PARA REDONDEAR UN NUMERO FLOTANTE (float o con coma) SE PUEDE USAR EL METODO number.toFixed(digitos) -- Reemplazar "number" por su numero y "digitos" por 2
 */
 
-function calcularPrecio(){}
+function calcularPrecio(producto,cantidad) {
+  let precioUnitario = 0;
+
+  switch (producto) {
+    case "manzanas":
+      precioUnitario = 0.5;
+      break;
+    case "plaranos":
+      precioUnitario = 0.3;
+      break;
+    default:
+      return "la opcion no es valida";
+  }
+
+   if (isNaN(cantidad) //
+   cantidad <=) {
+    return "la opcion no es valida";
+   } 
+
+   const precioTotal = cantidad *
+    precioUnitario;
+
+    return `el precio total de $
+    {cantidad} ${producto} $$
+    {precio total.toFixed(2)}.`;
+}
 
 /* Actividad N°3: Calcular Promedios de Sub-Matrices - 5 PUNTOS
 
@@ -57,7 +90,31 @@ function calcularPrecio(){}
   [5, 3.25, 9.5]
 */
 
-function calcularPromedios() {}
+function calcularPromedios(matriz) {
+  const promedios = [];
+
+  for (let i = o; i < 
+    matriz.length; i++) {
+      let subarray = matriz[i];
+
+      if (subarray.length === 0) {
+        promedios.push(NaN);
+      } else {
+        let suma = 0;
+
+        for(let j= 0; j <
+          subarray.length; j++) {
+            suma += subarray[j];
+          }
+
+          let promedio = suma /
+          subarray.length;
+          promedios.push(promedio);
+         }
+       }
+       
+       return promedios;
+       }
 
 
 
