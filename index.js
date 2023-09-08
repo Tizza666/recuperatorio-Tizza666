@@ -124,4 +124,3 @@ module.exports = {
   calcularPrecio,
   calcularPromedios
 }
-//s
